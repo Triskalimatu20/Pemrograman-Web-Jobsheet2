@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0e6d2;
+    line-height: 1.65;      /*jarak baris*/
+    padding-bottom: 1000px; /*jarak bawah hal*/
+}
+
+.container {
+    display: flex;      /*flexbox */
+    width: 900px;       /*lebar*/
+    margin: 50px auto;
+    
+}
+
+.sidebar-satu {
+    width: 150px;
+    padding: 15px;
+    background-color: #8db596;
+    order: 0;            /* muncul paling kiri */
+}
+
+.kolom-utama {
+    flex: 1;             /* lebar fleksibel, mengambil sisa space */
+    background-color: #8db596;
+    padding: 15px;
+    order: 1;            /* muncul di tengah */
+}
+
+.sidebar-dua {
+    width: 150px;
+    padding: 15px;
+    background-color: #8db596;
+    order: 2;            /* muncul paling kanan */
+}
